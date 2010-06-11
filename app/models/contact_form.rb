@@ -1,7 +1,7 @@
 class ContactForm < MailForm
 
     subject "My Contact Form"
-    recipients "agata@applicake.com"
+    recipients "agatka.mazur@gmail.com"
     sender{|c| %{"#{c.name}" <#{c.email}>} }
 
     attribute :name,      :validate => true

@@ -1,0 +1,35 @@
+<h1>Contact</h1>
+
+<p>
+  Completely impact multifunctional processes and wireless supply chains. Dynamically engage business meta-services for market-driven data. Collaboratively restore cross-platform users before client-centered manufactured products.
+</p>
+
+<div class="contact_form">
+  <h2> Your Message </h2>
+  <% form_for @contact do |f| %>
+
+    <fieldset>
+      <label>Email Address</label>
+      <%= f.text_field :email %>
+      <%= f.error_message_on :email %>
+    </fieldset>
+
+    <fieldset>
+      <label>Message</label>
+      <%= f.text_area :message %>
+      <%= f.error_message_on :message %>
+    </fieldset>
+
+    <%= submit_tag 'send' %>
+
+  <% end %>
+</div>
+
+<div class="contact_info">
+  <h2>Contact Details</h2>
+  <p>Email: info@tedxkrakow.com </p>
+  <p>Phone: 3434343434</p>
+  <p>Address: 23 Street Name, 31-115 Kraków</p>
+</div>
+
+<div class="clear"><!-- zzz --></div>
