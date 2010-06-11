@@ -21,4 +21,16 @@ class Notifier < ActionMailer::Base
     body       :message => contact.message 
   end
 
+  def involved(contact)
+    subject    'New person wants to get involved!'
+    recipients 'agatka.mazur@gmail.com'
+    from       'agata@applicake.com'
+    sent_on    Time.now
+    
+    body       :email => contact.email 
+    body       :name => contact.name 
+    body       :phone => contact.phone
+    body       :message => contact.message 
+  end
+
 end

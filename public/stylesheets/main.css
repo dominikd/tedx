@@ -55,13 +55,18 @@ div.venue_map {
   margin-left: 20px;
 }
 
-
 /* contact */
 
 label { display: block; font-weight: bold; }
 .contact_form, .contact_info { float: left; display: inline; margin-top: 10px; }
 .contact_form {  width: 500px; }
 .contact_info {  width: 320px; }
+
+/* involved */
+
+.involved_form, .involved_info { float: left; display: inline; margin-top: 10px; }
+.involved_form {  width: 420px; }
+.involved_info {  width: 400px; }
 
 /* general styles */
 

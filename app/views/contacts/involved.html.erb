@@ -1,0 +1,40 @@
+<h1>Get Involved</h1>
+
+<div class="involved_info">
+Completely impact multifunctional processes and wireless supply chains. Dynamically engage business meta- services for market-driven data. Collaboratively restore cross-platform users before client-centered manufactured products.
+Assertively evolve long-term high-impact vortals through visionary solutions. Professionally harness standardized portals vis-a-vis resource maximizing deliverables. Continually coordinate stand-alone applications rather than virtual communities.
+Dynamically optimize fully researched results before stand-alone human capital. Completely predominate seamless synergy via interoperable methodologies. Dramatically provide access to fully researched infrastructure
+</div>
+
+
+
+<div class="involved_form">
+  <% form_for @contact do |f| %>
+
+    <%= hidden_field_tag :involved, true %>
+    <fieldset>
+      <label>Email Address</label>
+      <%= f.text_field :email %>
+      <%= f.error_message_on :email %>
+    </fieldset>
+
+    <fieldset>
+      <label>Name</label>
+      <%= f.text_field :name %>
+
+      <label>Phone</label>
+      <%= f.text_field :phone %>
+    </fieldset>
+
+    <fieldset>
+      <label>Message</label>
+      <%= f.text_area :message %>
+      <%= f.error_message_on :message %>
+    </fieldset>
+
+    <%= submit_tag 'send' %>
+
+  <% end %>
+</div>
+
+<div class="clear"><!-- zzz --></div>

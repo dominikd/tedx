@@ -30,7 +30,9 @@ ActionController::Routing::Routes.draw do |map|
   #     # Directs /admin/products/* to Admin::ProductsController (app/controllers/admin/products_controller.rb)
   #     admin.resources :products
   #   end
-  map.static ':page', :controller => 'home', :action => 'show' #, :page => /video_for_business/
+  map.static ':page', :controller => 'home', :action => 'show', :page => /about|venue/
+  map.contact '/contact', :controller => 'contacts', :action => 'new' 
+  map.involved '/involved', :controller => 'contacts', :action => 'new', :involved => true 
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
   map.root :controller => 'home', :action => 'index'

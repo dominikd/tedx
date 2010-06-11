@@ -36,6 +36,7 @@ Rails::Initializer.run do |config|
   config.time_zone = 'UTC'
 
   config.gem 'mysql'
+  config.gem 'ruby-debug'
   config.gem 'mail_form', :version => '1.0.0'
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
