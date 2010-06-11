@@ -1,0 +1,65 @@
+body{ 
+  text-align: center; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div#header,
+div#footer,
+div#yield{
+  width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  font-size: 13px;
+}
+
+div#header{ margin-bottom: 10px; }
+div#footer{ margin-top: 10px; }
+
+ul#menu { margin-top: 10px; border-bottom: 2px solid black; font-size: 14px; }
+ul#menu li{ float: left; display: inline; margin-right: 10px; }
+ul#menu li a { text-decoration: underline; color: black; }
+ul#menu li a.selected { text-decoration: none; }
+
+div.content{ float: left; display: inline; width: 500px; }
+div.sidebar{ float: left; display: inline; width: 320px; }
+
+/* homepage */
+.video { margin: 15px 0; }
+
+.main_desc h1{ margin: 0 }
+.main_desc h1.main_headline{ font-weight: normal; }
+
+.info_box { margin-right: 20px; }
+.info_box h2{ border-bottom: 1px solid #999; }
+.about_tedx{ margin-top: 120px; }
+.speakers{ margin-top: 70px; }
+
+
+/* venue */
+
+div.images img{ float: left; display: inline; }
+div.images img.max1{ margin-right: 10px; }
+div.images img.max3{ margin-top: 10px; }
+
+div.venue_desc { 
+  float: left; 
+  display: inline;
+  width: 500px; 
+  margin-top: 40px;
+}
+div.venue_map { 
+  float: left;  
+  display: inline; 
+  width: 300px; 
+  margin-left: 20px;
+}
+
+/* general styles */
+
+h1 { font-size: 20px; font-weight: bold; margin: 10px 0; }
+h2 { font-size: 16px; font-weight: bold; margin: 10px 0; }
+
+h3 { font-size: 13px; font-weight: bold; margin: 10px 0; }
+
+.clear{ clear: both; }

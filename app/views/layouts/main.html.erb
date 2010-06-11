@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>TEDxKrakow</title>
+    <%= stylesheet_link_tag('reset', 'main') %>
+  </head>
+  
+  <body> 
+    <div id="header">
+      <%= image_tag('/images/logo.jpg') %>
+    
+      <ul id="menu">
+        <li><%= link_to 'Home', '/', :class => selected('home') %></li>
+        <li><%= link_to 'About TEDx', '/about', :class => selected('about') %></li>
+        <li><%= link_to 'Conference Programme', '/programme', :class => selected('programme') %></li>
+        <li><%= link_to 'Speakers', '/speakers',  :class => selected('speakers') %></li>
+        <li><%= link_to 'Venue', '/venue',  :class => selected('venue') %></li>
+        <li><%= link_to 'Get Involved', '/involved',  :class => selected('involved') %></li>
+        <li><%= link_to 'Contact', '/contact',  :class => selected('contact') %></li>
+        <div class="clear"><!-- zzz --></li>
+      </ul>
+    </div>
+
+    <div id="yield">
+      <%= yield %>
+    </div>
+ 
+    <div id="footer">
+      Text in the footer that states "This independent TEDx event is operated under license from TED."
+    </div>
+  </body>
+
+</html>
+
+
+
+
